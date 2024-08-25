@@ -49,7 +49,7 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
             alt='share'
             width={20}
             height={20}
-            className='min-w-4 hidden sm:block'
+            className='min-w-4'
           />
           <p className="mr-1 hidden sm:block">Share</p>
         </Button>

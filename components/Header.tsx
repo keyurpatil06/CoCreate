@@ -6,13 +6,16 @@ const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn('header', className)}>
       <Link href='/' className='md:flex-1'>
-        <Image
-          src='/assets/icons/logo.svg'
-          alt='logoWithName'
-          width={120}
-          height={32}
-          className='hidden md:block'
-        />
+        <div className='flex items-center w-fit'>
+          <Image
+            src='/assets/icons/logo-icon.svg'
+            alt='logoWithName'
+            width={46}
+            height={32}
+            className='hidden md:block'
+          />
+          <span className='font-semibold text-lg hidden md:block'>CoCreate</span>
+        </div>
         <Image
           src='/assets/icons/logo-icon.svg'
           alt='logo'
